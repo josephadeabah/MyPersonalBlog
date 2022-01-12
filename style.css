@@ -20,7 +20,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 4.44rem;
+    height: 5.44rem;
     padding: 0 12%;
     background-color: white;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
@@ -61,8 +61,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50rem;
-    background: url("https://content.codecademy.com/courses/freelance-1/unit-6/project-morocco/banner.jpg") center center no-repeat;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1638913658211-c999de7fe786?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80") center center no-repeat;
     background-size: cover;
     color: #ffb78c;
   }
@@ -113,8 +113,10 @@ html {
     line-height: 1.4;
     font-family: "Work Sans",serif;
   }
+
   
-  .photo {
+  
+  /* .photo {
     width: 75%;
     padding: 1.11rem;
     border-radius: 5px;
@@ -166,7 +168,7 @@ html {
     font-size: 3.55rem;
     font-weight: 800;
     line-height:1.2;
-  }
+  } */
   
   @media only screen and (max-width: 680px) {
     .journal {
@@ -221,4 +223,25 @@ html {
       margin-bottom: 2rem;
       overflow: hidden;
     }
+    .column {
+      width: 100%;
+    }
   }
+
+
+
+ 
+  
+  .column {
+    float: left;
+    width: 50%;
+    height:auto;
+  }
+  /* Clear floats after the columns */
+  .twoCol:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
