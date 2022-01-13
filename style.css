@@ -175,6 +175,102 @@ html {
       padding: 0 10% 4rem 10%;
     }
   }
+
+
+
+
+
+
+  .gallery *,
+.gallery *:before,
+.gallery *:after{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+/* div{
+  font-family:Georgia,TimesNewRoman,'Times New Roman',Times,serif;
+  font-size:14px;
+  line-height:18px;
+} */
+
+.gallery{
+  display:block;
+  width:100%;
+  margin:0 auto;
+  overflow:hidden;
+  max-width:960px;
+}
+
+.gallery .tile{
+  display:block;
+  width:100%;
+  padding:0 0.5em 0.5em 0;
+}
+
+.gallery .tile .post{
+  /* this is the content box; what follows is purely cosmetic */
+  background-color:#003152;
+  color:#f0f0f0;
+  text-align:center;
+  padding:6em 2em;
+}
+
+.gallery .tile.wide .post{
+  /* as above this is just cosmetic */
+    background-color:#08457e;
+    background-image:-webkit-gradient(linear,left bottom,right top,color-stop(1%,#08457e),color-stop(52%,#005f9e),
+        color-stop(52%,#08457e),color-stop(100%,#007cc2));
+    background-image:-webkit-linear-gradient(45deg,#08457e 1%,#005f9e 52%,#08457e 52%,#007cc2 100%);
+    background-image:-moz-linear-gradient(45deg,#08457e 1%,#005f9e 52%,#08457e 52%,#007cc2 100%);
+    background-image:-ms-linear-gradient(45deg,#08457e 1%,#005f9e 52%,#08457e 52%,#007cc2 100%);
+    background-image:-o-linear-gradient(45deg,#08457e 1%,#005f9e 52%,#08457e 52%,#007cc2 100%);
+    background-image:linear-gradient(45deg,#08457e 1%,#005f9e 52%,#08457e 52%,#007cc2 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08457e',endColorstr='#007cc2',GradientType=1);
+    color:#fff;
+}
+
+.gallery .tile.full .post{
+  /* as above this is just cosmetic */
+  background-color:#059029;
+}
+
+@media screen and (min-width:480px){
+  .gallery .tile{
+    width:50%;
+    float:left;
+  }
+  .gallery .tile.wide,
+  .gallery .tile.full{
+    width:100%;
+  }
+}
+
+@media screen and (min-width:720px){
+  .gallery .tile{
+    width:33.333%;
+    float:left;
+  }
+  .gallery .tile.wide{
+    width:66.667%;
+  }
+}
+
+@media screen and (min-width:960px){
+  .gallery .tile{
+    width:25%;
+    float:left;
+  }
+  .gallery .tile.wide{
+    width:50%;
+  }
+}
+
+
+
+
+
   
   /* Footer */
   
